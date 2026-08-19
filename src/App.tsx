@@ -1,10 +1,14 @@
 import { useState } from "react";
 import CarouselStacked from "@/components/ui/carousel-07";
 import { Component as VintageKeyboard } from "@/components/ui/vintage-keyboard";
+import { FlipDiskMatrix } from "@/components/ui/flip-disk-matrix";
+import CoverflowCarouselDemo from "@/components/coverflow-carousel-demo";
 
 const PROJECTS = [
   { id: "carousel", label: "Carousel", render: () => <CarouselStacked /> },
   { id: "keyboard", label: "Keyboard", render: () => <VintageKeyboard /> },
+  { id: "flipdisk", label: "Flip Disk", render: () => <FlipDiskMatrix /> },
+  { id: "coverflow", label: "Coverflow", render: () => <CoverflowCarouselDemo /> },
 ];
 
 export default function App() {
